@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 1rem;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    li{list-style: none;}
+}
+a{text-decoration: none;}
+body{background-color: rgba(211, 207, 205, 0.952);}
+
+header{
+    border-bottom: solid 0.1rem black;
+    display: flex;
+    position: relative;
+    min-height: 25vh;
+    .left{
+        left: 3rem;
+        bottom: 0.5rem;
+        ul{
+            
+            li{
+                font-size: 1.25rem;
+                    margin: 0rem;
+                span{
+                    margin: 0;
+                    i.fa-school{margin: 0.75rem;}
+                     }
+                }
+        }
+    }
+    .right{
+        position: absolute;
+        right: 15rem;
+        bottom: 0.5rem;
+        display: flex;
+        img{width: 14rem;
+            height: 16rem;
+            border-radius: 5%;
+            &:hover{
+                transform: scale(1.25);
+                transition: all 0.5s;
+                }
+            }
+    }
+}
+section.profile{
+    border-bottom: solid 0.1rem black;
+
+}
+section.skill{
+    border-bottom: solid 0.1rem black;
+    img{margin: 0rem 0.25rem;
+        &:hover{
+            transform: scale(1.25);
+            transition: all 0.5s;
+            }
+    }
+}
+footer{
+    a{
+        margin: 0.5rem;
+        img{
+            margin: 0rem 0.25rem;
+            &:hover{
+            transform: scale(1.25);
+            transition: all 0.5s;
+            }
+        }
+    }
+}
+@media screen and (max-width: 980px) {
+    *{font-size: 15px;}
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .left{position: relative;
+            margin-right:  6rem;
+            left: 0;
+        }
+        .right{
+            display: flex;
+            position: relative;
+            right: 0;
+            bottom: 0;
+          img{
+            margin: 0;
+        }
+        }
+    }
+}
+@media screen and(max-width:500px) {
+    header{
+        .left{margin-right: 2rem;}
+    }
+}

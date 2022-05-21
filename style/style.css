@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgba(211, 207, 205, 0.952);
+}
+
+header {
+  border-bottom: solid 0.1rem black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  min-height: 25vh;
+}
+
+header .left {
+  left: 3rem;
+  bottom: 0.5rem;
+}
+
+header .left ul li {
+  font-size: 1.25rem;
+  margin: 0rem;
+}
+
+header .left ul li span {
+  margin: 0;
+}
+
+header .left ul li span i.fa-school {
+  margin: 0.75rem;
+}
+
+header .right {
+  position: absolute;
+  right: 15rem;
+  bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .right img {
+  width: 14rem;
+  height: 16rem;
+  border-radius: 5%;
+}
+
+header .right img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+section.profile {
+  border-bottom: solid 0.1rem black;
+}
+
+section.skill {
+  border-bottom: solid 0.1rem black;
+}
+
+section.skill img {
+  margin: 0rem 0.25rem;
+}
+
+section.skill img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer a {
+  margin: 0.5rem;
+}
+
+footer a img {
+  margin: 0rem 0.25rem;
+}
+
+footer a img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 980px) {
+  * {
+    font-size: 15px;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .left {
+    position: relative;
+    margin-right: 6rem;
+    left: 0;
+  }
+  header .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+  header .right img {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .left {
+    margin-right: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
